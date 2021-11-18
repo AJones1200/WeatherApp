@@ -1,0 +1,77 @@
+
+main {
+    display: flex;
+    flex-direction: row;
+
+}
+
+h2 {
+    background-color: slateblue;
+    text-align: center;
+    color: white;
+    line-height: 2;
+}
+
+h4 {
+    text-align: center;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+
+}   
+
+#day1 {
+    background-color: navy;
+    color: white;
+}
+
+#day2 {
+    background-color: navy;
+    color: white;
+}
+
+#day3 {
+    background-color: navy;
+    color: white;
+
+}
+
+#day4 {
+    background-color: navy;
+    color: white;
+
+}
+
+#day5 {
+    background-color: navy;
+    color: white;
+
+}
+
+button {
+    background-color: turquoise;
+}
+
+ul button {
+    background-color: rgb(1, 207, 35);
+    margin-top: 20px;
+    color: white;
+    font-size: 28px;
+    
+}
+
+
+#searchButton {
+    margin: 20px;
+    line-height: 20px;
+    width: 400px;
+}
+
+#storedCityList {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    
+}
