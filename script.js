@@ -25,7 +25,10 @@ function fetchData(cityName){
 
             } else if (
               weatherData.cod === "404"
-            ) {return}
+            ) {
+              document.createElement("h2").textContent = "Please enter valid city.";
+          
+          }
 
             var lat = weatherData.coord.lat
             var long = weatherData.coord.lon
@@ -165,3 +168,14 @@ function fetchData(cityName){
     button.addEventListener("click", function(){
       var city = inputField.value
        fetchData(city)}) 
+
+// Execute a function when the user releases a key on the keyboard
+  inputField.addEventListener("keyup", function(event) {
+  // Number 13 is the "Enter" key on the keyboard
+  if (event.keyCode === 13) {
+    // Cancel the default action, if needed
+    event.preventDefault();
+    var city = inputField.value
+    fetchData(city)
+  }
+}); 
