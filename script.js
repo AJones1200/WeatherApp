@@ -25,10 +25,7 @@ function fetchData(cityName){
 
             } else if (
               weatherData.cod === "404"
-            ) {
-              document.createElement("h2").textContent = "Please enter valid city.";
-          
-          }
+            ) {return}
 
             var lat = weatherData.coord.lat
             var long = weatherData.coord.lon
